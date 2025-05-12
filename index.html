@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário de matrícula</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="form-section">
+      <form action="#">
+        <a href="#" class="btn-voltar">← Voltar</a>
+        <h2>Formulário de matrícula</h2>
+        <p>
+          Preencha os dados abaixo para matricular seu filho na escola de
+          educação infantil Estrelas do Amanhã.
+        </p>
+
+        <h3>Informações da criança</h3>
+
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Maria Luiza Alves" required/>
+
+        <label for="data-nascimento">Data de nascimento</label>
+        <input
+          type="date"
+          id="data-nascimento"
+          name="data-nascimento"
+          value="2019-05-06"
+          required
+        />
+
+        <label for="sexo">Sexo</label>
+        <select id="sexo" name="sexo" required>
+          <option value="feminino" selected>Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="info-medicas">Informações médicas</label>
+        <textarea id="info-medicas" name="info-medicas" rows="3" required>
+Ela tem alergia a glúten</textarea
+        >
+
+        <label for="certidao">Certidão de nascimento</label>
+        <label for="certidao" class="custom-file-upload"
+          ><img src="img/cloud-upload.png" alt="" /> Clique aqui para selecionar
+          arquivos</label
+        >
+        <input type="file" id="certidao" name="certidao" required/>
+
+        <h3>Endereço residenciala</h3>
+
+        <label for="cep">CEP</label>
+        <input type="text" name="cep" id="cep" placeholder="01234-567" required/>
+
+        <div class="rua-numeroCasa">
+          <div class="input-label-rua">
+            <label for="rua" class="rua">Rua</label>
+            <input
+              type="text"
+              name="rua"
+              id="rua"
+              placeholder="Rua das Flores"
+              required
+            />
+          </div>
+          <div class="input-label-numeroCasa">
+            <label for="numeroCasa" class="numero-casa">Número</label>
+            <input
+              type="number"
+              name="numeroCasa"
+              id="numeroCasa"
+              placeholder="123"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="cidade-estado">
+          <div class="input-label-cidade">
+            <label for="cidade">Cidade</label>
+            <input
+              type="text"
+              name="cidade"
+              id="cidade"
+              placeholder="São Paulo"
+              required
+            />
+          </div>
+          <div class="input-label-estado">
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado" placeholder="SP" required/>
+          </div>
+        </div>
+
+        <h3>Informações do responsável</h3>
+        <div class="inf-do-responsavel">
+          <label for="nomeResponsavel">Nome do responsável</label>
+          <input
+            type="text"
+            id="nomeResponsavel"
+            name="nomeResponsavel"
+            placeholder="Miguel Roberto Alves"
+            required
+          />
+          <label for="nomeResponsavel"
+            >Principal responsável legal e contato de emergência</label
+          >
+
+          <label for="telefoneResponsavel">Telefone</label>
+          <input
+            type="tel"
+            id="telefoneResponsavel"
+            name="telefoneResponsavel"
+            placeholder="(10) 9 8765-4321"
+            required
+          />
+
+          <label for="emailResponsavel">E-mail</label>
+          <input
+            type="email"
+            id="emailResponsavel"
+            name="emailResponsavel"
+            placeholder="papailegal123@gmail.com"
+            required
+          />
+          <span class="error-message"
+            ><img src="img/alert-circle.png" alt="" /> Insira um e-mail
+            válido</span
+          >
+        </div>
+        <h3>Opções de matrícula</h3>
+        <label for="">Selecione o turno de estudo</label>
+        <div class="opcao-de-matricula">
+          <label>
+            <input type="radio" name="turno" value="manha" checked />
+            <div class="option-label manha">
+              <div class="icon"><img src="img/sun-cloud-02.png" alt="" /></div>
+              <div>Manhã</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="turno" value="tarde" />
+            <div class="option-label tarde">
+              <div class="icon"><img src="img/sun-02.png" alt="" /></div>
+              <div>Tarde</div>
+            </div>
+          </label>
+        </div>
+
+        <label for="" class="qual-esporte-vc-gosta"
+          >Em qual esporte você gostaria de inscrever seu filho?</label
+        >
+
+        <div class="opcao-de-esportes">
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon"><img src="img/football.png" alt="" /></div>
+              <div>Futebol</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon"><img src="img/basketball-02.png" alt="" /></div>
+              <div>Basquete</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon"><img src="img/swimming.png" alt="" /></div>
+              <div>Natação</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon"><img src="img/yoga-02.png" alt="" /></div>
+              <div>Yoga</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon"><img src="img/volleyball.png" alt="" /></div>
+              <div>Volley</div>
+            </div>
+          </label>
+
+          <label>
+            <input type="radio" name="esporte" />
+            <div class="option-label">
+              <div class="icon">
+                <img src="img/boxing-glove-01.png" alt="" />
+              </div>
+              <div>Boxing</div>
+            </div>
+          </label>
+        </div>
+
+        <div style="display: flex; margin-top: 20px;">
+        <input type="checkbox" id="privacidade" style="margin-top: 15px; width: 18px; height: 18px;">
+        <label for="privacidade" style="margin-left: 8px;">
+          Declaro que li e concordo com os <span class="destaque">Termos e Condições</span> e<br>
+          com a <span class="destaque">Política de Privacidade</span> da escola Estrela do Amanhã.
+        </label>
+      </div>
+
+      <div class="btns">
+        <button class="salvar-res">Salvar respostas</button>
+        <button class="fazer-mat">Fazer matrícula</button>
+      </div>
+      </form>
+    </section>
+
+    <section class="convite-inscricao">
+      <div class="estrelas-do-amanha">
+        <img
+          src="img/Frame 48095957.png"
+          alt="Logo Estrelas do Amanhã"
+          class="logo-estrelas"
+        />
+        <span>Estrelas do Amanhã</span>
+      </div>
+      <h1>
+        Porque cada momento de <span class="destaque">aprendizado</span> conta
+      </h1>
+      <p>
+        Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+        acolhedor, seguro e estimulante.
+      </p>
+      <img
+        src="img/Illustration.png"
+        alt="Ilustração crianças aprendendo"
+        class="ilustracao"
+      />
+    </section>
+  </body>
+</html>

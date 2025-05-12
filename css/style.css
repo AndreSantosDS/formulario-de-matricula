@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.form-section {
+  width: 50%;
+  padding: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.btn-voltar {
+  text-decoration: none;
+  color: #57534e;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+label {
+  font-weight: 400;
+  margin-top: 10px;
+  display: block;
+  color: #57534e;
+  font-size: 14px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+#certidao {
+  display: none;
+}
+
+.custom-file-upload {
+  display: block;
+  border-radius: 6px;
+  width: 100%;
+  padding: 12px;
+  border: 1px dashed #ccc;
+  font-size: 16px;
+  height: 120px;
+  font-weight: 200;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-file-upload img {
+  width: 50px;
+}
+.rua-numeroCasa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.rua-numeroCasa .input-label-rua #rua {
+  width: 100%;
+  background-color: #e7e5e4;
+}
+
+.cidade-estado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cidade-estado .input-label-cidade #cidade {
+  width: 100%;
+  background-color: #e7e5e4;
+}
+.cidade-estado #estado {
+  background-color: #e7e5e4;
+}
+
+.inf-do-responsavel #emailResponsavel:invalid {
+  border-color: red;
+}
+.inf-do-responsavel .error-message {
+  color: red;
+  font-size: 12px;
+  display: block;
+}
+
+.opcao-de-matricula {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.option-label {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s;
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .option-label {
+  border-color: #f15a24;
+}
+
+input[type="radio"]:checked + .option-label::before {
+  content: "✔";
+  color: white;
+  background-color: #f15a24;
+  border-radius: 50%;
+  padding: 2px 6px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.manha .icon {
+  color: #b0c4de;
+}
+
+.tarde .icon {
+  color: #f7c948;
+}
+
+.opcao-de-esportes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.salvar-res{
+    background-color: white;
+    border:  2px solid #e43a12;
+    border-radius: 8px;
+    color: #e43a12;
+    font-size: 20px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fazer-mat{
+    background-color: #e43a12;
+    border:  2px solid #e43a12;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+
+.convite-inscricao {
+  width: 50%;
+  padding: 40px;
+  background-color: #ffe7d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.convite-inscricao h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 50px;
+  color: #292524;
+}
+.destaque {
+  color: #ff5733;
+  font-weight: bold;
+}
+.convite-inscricao p {
+  color: #57534e;
+}
+.convite-inscricao .ilustracao {
+  margin-top: 30px;
+  width: 100%;
+}
+.convite-inscricao .estrelas-do-amanha {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
