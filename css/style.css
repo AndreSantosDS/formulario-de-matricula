@@ -191,33 +191,54 @@ input[type="radio"]:checked + .option-label::before {
 
 
 .convite-inscricao {
-  width: 50%;
+  width: 50%; 
+  box-sizing: border-box;
   padding: 40px;
   background-color: #ffe7d9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
+  margin: 0 auto; 
 }
+
 .convite-inscricao h1 {
   font-size: 32px;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 1.4;
   color: #292524;
+  margin: 20px 0 16px;
 }
+
 .destaque {
   color: #ff5733;
   font-weight: bold;
 }
+
 .convite-inscricao p {
   color: #57534e;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
+
 .convite-inscricao .ilustracao {
-  margin-top: 30px;
   width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 30px;
+  display: block;
 }
+
 .convite-inscricao .estrelas-do-amanha {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 10px;
+}
+
+.logo-estrelas {
+  max-height: 50px;
+  width: auto;
+  height: auto;
 }
