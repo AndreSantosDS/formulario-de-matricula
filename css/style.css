@@ -215,7 +215,7 @@ input[type="radio"]:checked + .option-label::before {
 }
 .convite-inscricao .ilustracao {
   margin-top: 30px;
-  max-width: 90%;
+  width: 90%;
   margin-bottom: 10px;
 }
 .estrelas-do-amanha{
